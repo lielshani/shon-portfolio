@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { useTheme } from "../../../../../../Downloads/Portfolio PRD for Shon Hazan 2/src/app/components/ThemeContext";
 
 // Local asset imports
 import veteransPortal from "../../assets/8d77d6d48d737128804b0e92609e1e570d68c42c.png";
@@ -13,6 +12,7 @@ import polisaDriverMobile from "../../assets/fe6ec0ad236252a36e9ec6d06db435f3c85
 import polisaDriverDesktop from "../../assets/ab010cbfe0fe215ef79357a96cb8632b6df2fb60.png";
 import polisaInsurance from "../../assets/d099e199fd70995e14d035e4b18ab4981ddd657c.png";
 import polisaPersonal from "../../assets/563aeec4e3a1aa9ae0a2c2980d02f80f7ce40216.png";
+import {useTheme} from './ThemeContext';
 
 interface ShowreelSlide {
   id: string;
