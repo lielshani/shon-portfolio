@@ -1,0 +1,14 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Input placeholder inherits theme */
+input::placeholder,
+textarea::placeholder {
+  color: var(--sh-text-muted, #999);
+  opacity: 0.7;
+}
