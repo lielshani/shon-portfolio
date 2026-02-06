@@ -5,6 +5,7 @@ import { projects } from "./projectData";
 import { Link } from "react-router-dom";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useTheme } from "./ThemeContext";
+import { ShowreelCarousel } from "./ShowreelCarousel";
 
 /* ─── Project Card ─── */
 function ProjectCard({
@@ -121,10 +122,10 @@ export function HomePage() {
                   }}
                 >
                   Product Designer crafting clarity in complex{" "}
-                  <span style={{ color: ["stark", "noir", "midnight"].includes(theme.id) ? theme.accent : theme.textFaint }}>systems</span>.
+                  <span style={{ color: ["stark","noir","midnight"].includes(theme.id) ? theme.accent : theme.textFaint }}>systems</span>.
                 </h1>
                 {/* Accent line for themes with strong accent */}
-                {["stark", "noir", "midnight"].includes(theme.id) && (
+                {["stark","noir","midnight"].includes(theme.id) && (
                   <div className="mt-4 w-12 h-[3px] rounded-full" style={{ backgroundColor: theme.accent }} />
                 )}
               </motion.div>
@@ -199,7 +200,7 @@ export function HomePage() {
               transition={{ duration: 1, delay: 0.5 }}
               className="hidden md:block w-full"
             >
-
+              <ShowreelCarousel />
             </motion.div>
           </div>
         </div>
